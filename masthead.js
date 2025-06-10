@@ -25,10 +25,15 @@ export function mount(selector, options = {}) {
         background: #fff;
         border-bottom: 1px solid #e5e5e5;
         padding: 8px 16px;
+        line-height: 0.5rem;
+      }
+      
+      .masthead-content {
         display: flex;
         align-items: center;
         gap: 8px;
-        line-height: 0.5rem;
+        max-width: 1200px;
+        margin: 0 auto;
       }
       
       .toggle {
@@ -67,8 +72,8 @@ export function mount(selector, options = {}) {
       .grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 24px;
-        max-width: 800px;
+        gap: 10rem;
+        max-width: 1200px;
         margin: 0 auto;
       }
       
@@ -101,11 +106,13 @@ export function mount(selector, options = {}) {
     </style>
 
     <div class="masthead">
-      <span>An Australian Government Agency Website.</span>
-      <a class="toggle" id="toggle-${uid}">
-        How to identify
-        <span class="arrow">▼</span>
-      </a>
+      <div class="masthead-content">
+        <span>An Australian Government Agency Website.</span>
+        <a class="toggle" id="toggle-${uid}">
+          How to identify
+          <span class="arrow">▼</span>
+        </a>
+      </div>
     </div>
 
     <div class="panel" id="panel-${uid}">
