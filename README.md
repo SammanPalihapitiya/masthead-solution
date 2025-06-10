@@ -1,4 +1,4 @@
-# AusGov Website Demo
+# Masthead Component
 
 This is a simple HTML+JS demo showcasing a reusable **Australian Government masthead** component. It highlights how to indicate an official `.gov.au` website with best practices in design and security.
 
